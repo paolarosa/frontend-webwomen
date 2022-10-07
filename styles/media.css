@@ -1,0 +1,121 @@
+@media(min-width:700px) {
+
+    header {
+        width: 100vw;
+        background-image: url(../assets/img/img\ desktop.svg);
+        display: flex;
+        height: 500px;
+    }
+
+    .div-header {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .main-aside {
+        display: flex;
+        margin-left: 20px;
+        gap: 30px
+    }
+
+    main {
+        margin-left: 50px;
+        /*   display: flex;
+        flex-direction: column;
+        align-items: flex-start; */
+    }
+
+
+    .company-city {
+        justify-content: flex-start;
+        gap: 30px
+    }
+
+    .type-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .types {
+        display: flex;
+        gap: 20px
+    }
+
+    .type-job-card {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+
+    aside {
+        max-width: 500px;
+        margin: 90px 40px 0 0;
+        height: 100%;
+    }
+
+    aside h2 {
+        margin-bottom: 0;
+        font-size: var(--text-2);
+    }
+
+    .job-selected {
+        font-size: var(--text-4)
+    }
+
+    .company-city-selected {
+        width: 100%;
+        font-size: var(--text-4);
+        justify-content: flex-start;
+        gap: 20px
+    }
+
+    .company-card {
+        font-weight: 400
+    }
+
+    .ul-selected {
+        height: 100%;
+    }
+
+    .without-selected {
+        margin: 15px;
+        text-align: center;
+        border-radius: 32px;
+        height: 200px;
+    }
+
+    .without-selected p {
+        margin-top: 20px
+    }
+
+    .div1 {
+        background-color: #F1F3F5;
+        width: 50%;
+    }
+
+    .div2 {
+        background-color: #F1F3F5;
+        width: 80%;
+    }
+
+    .div3 {
+        background-color: #F1F3F5;
+        width: 90%;
+        display: flex;
+        gap: 20px
+    }
+
+    .button-header {
+        width: 280px;
+    }
+
+    .button-card {
+        min-width: 100px;
+       width: 15%;
+        font-size: var(--text-4);
+
+    }
+}

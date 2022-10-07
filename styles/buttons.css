@@ -1,0 +1,32 @@
+.button-header {
+    height: 40px;
+    width: 90%;
+    background-color: var(--color-brand-1);
+    border: 2px solid #6741D9;
+    border-radius: 8px;
+    color: var(--color-grey-6);
+    font-size: var(--text-4);
+    font-weight: 500;
+    margin: 40px 0 0 20px;
+    cursor:pointer;
+}
+
+.button-card {
+    background-color: var(--color-brand-1);
+    width: 95%;
+    height: 35px;
+    border: 2px solid var(--color-brand-1);
+    border-radius: var(--radius-default);
+    color: var(--color-grey-6);
+    margin-top: 20px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.trash-button {
+    border: 2px solid var(--color-grey-5);
+    border-radius: 8px;
+    width: 40px;
+    height: 38px;
+    cursor:pointer;
+}

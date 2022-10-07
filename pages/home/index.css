@@ -1,1 +1,209 @@
-/* Desenvolva sua estilização aqui... */
+header {
+    background-image: url(../../assets/img/Pexels\ Photo\ by\ Christina\ Morillo.svg);
+    background-position-y: bottom;
+    height: 620px;
+    margin: 10px 10px
+}
+
+.div-header {
+    height: 100%;
+    background-color: var(--color-grey-0);
+    color: var(--color-grey-3);
+
+}
+
+.logo {
+    width: 190px;
+    height: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.title-header {
+    font-size: var(--title-5);
+    margin-left: 20px;
+
+}
+
+.text-header {
+    font-size: var(--text-4);
+    margin: 25px 20px 0 20px;
+    font-weight: 400;
+    line-height: 32px
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+main h2 {
+    color: var(--color-grey-1);
+    font-size: var(--title-5);
+    margin-top: 30px;
+
+
+}
+
+.ul-cards {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.li-cards {
+    background-color: var(--color-grey-6);
+    width: 100%;
+    border-radius: var(--radius-default);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.company-city {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px
+}
+
+.job-card {
+    font-size: var(--text-1);
+    font-weight: 600
+}
+
+.company-card {
+    font-size: var(--text-4);
+    font-weight: 400
+}
+
+.city-card {
+    font-size: var(--text-4)
+}
+
+.type-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.types {
+    display: flex;
+    gap: 30px
+}
+
+.description-card {
+    font-size: var(--text-3)
+}
+
+.type-job-card {
+    font-size: var(--text-4);
+    background-color: var(--color-grey-3);
+    width: 111px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-default);
+    margin-top: 10px
+}
+
+aside {
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: var(--color-grey-6);
+    width: 90%;
+    border-radius: var(--radius-default);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+aside h2 {
+    color: var(--color-grey-1);
+    font-size: var(--title-5);
+    margin: 30px 20px 10px 30px;
+}
+
+.ul-selected {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.li-selected {
+    display: flex;
+    min-height: 120px;
+    flex-direction: column;
+    padding-left: 20px;
+    border-bottom: 2px solid #F1F3F5;
+    gap: 15px;
+    margin-top: 20px
+}
+
+.job-selected {
+    font-size: var(--text-3);
+    width: 70%;
+}
+
+
+.job-button {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+}
+
+.company-city-selected {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-4)
+}
+
+.without-selected {
+    background-color: var(--color-grey-6);
+    border-radius: var(--radius-default);
+    height: 300px;
+}
+
+
+.without-selected p {
+    font-size: var(--text-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.without-selected div {
+    background-color: #F1F3F5;
+    height: 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 32px
+}
+
+.div1 {
+    width: 50%;
+}
+
+.div2 {
+    width: 80%;
+}
+.div3{
+    width: 90%;
+    display: flex;
+    gap:20px
+}
+
+
+.hidden {
+    display: none;
+}
