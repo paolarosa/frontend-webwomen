@@ -39,6 +39,7 @@ function createCard(jobsData) {
     return tagLi
 }
 
+
 function renderCard(jobsData) {
     let tagUl = document.querySelector(".ul-cards")
 
@@ -77,8 +78,6 @@ function createCardSelected(lista) {
         tagCity.classList.add("city-card")
         tagCity.innerText = `${element.location}`
 
-
-
         let botaoCandidatar = document.querySelectorAll(".button-card")
         tagButton.addEventListener("click", () => {
 
@@ -87,46 +86,23 @@ function createCardSelected(lista) {
                 if (+tagButton.id === element.id) {
                     return element
                 }
-
             })
-
             const index = carrinho.indexOf(elemento)
             carrinho.splice(index, 1)
             createCardSelected(carrinho)
             addVazio()
+            localStorage.setItem("@kenzieVagas:vagasSelecionadas", JSON.stringify(carrinho))
             botaoCandidatar.forEach((elementCandidatar) => {
                 if (elementCandidatar.id == tagButton.id) {
                     elementCandidatar.innerText = "Candidatar"
                 }
-
             })
-
         })
-
-        /*  let botao = document.querySelector(".button-card")
-         
-         tagButton.addEventListener("click", () => {
- 
-             let elemento = carrinho.find((element) => {
- 
-                 if (+tagButton.id === element.id) {
-                     return element
-                 }
-             })
-             botao.innerText = "Candidatar"
-             const index = carrinho.indexOf(elemento)
-             carrinho.splice(index, 1)
-             createCardSelected(carrinho)
-             addVazio()
-         }) */
-
         tagCompanyCity.append(tagCompany, tagCity)
         tagJobButton.append(tagJob, tagButton)
         tagLi.append(tagJobButton, tagCompanyCity)
         ulSelected.appendChild(tagLi)
-
     })
-
 }
 /*  createCardSelected(jobsData) */
 
@@ -134,18 +110,14 @@ function createCardSelected(lista) {
 function renderCardSelected(jobsData) {
     let botao = document.querySelectorAll(".button-card")
 
-  let teste = JSON.parse(localStorage.getItem("@kenzieVagas:vagasSelecionadas"))
+    let teste = JSON.parse(localStorage.getItem("@kenzieVagas:vagasSelecionadas"))
     /* createCardSelected(teste) */
- 
-
 
     botao.forEach((element1) => {
         element1.addEventListener("click", (event) => {
             event.preventDefault()
 
             let elemento2 = jobsData.find((element2) => element1.id == element2.id)
-
-
 
             if (element1.innerText == "Candidatar") {
                 carrinho = [...carrinho, elemento2]
@@ -154,9 +126,6 @@ function renderCardSelected(jobsData) {
                 createCardSelected(carrinho)
                 addVazio()
                 localStorage.setItem("@kenzieVagas:vagasSelecionadas", JSON.stringify(carrinho))
-                /*  setCart([...selected(), elemento2])
-                  const selectedJson = JSON.stringify(selected())
-                  localStorage.setItem("selected",selectedJson) */
             }
             else {
                 const index = carrinho.indexOf(elemento2)
@@ -164,12 +133,8 @@ function renderCardSelected(jobsData) {
                 carrinho.splice(index, 1)
                 createCardSelected(carrinho)
                 addVazio()
+                localStorage.setItem("@kenzieVagas:vagasSelecionadas", JSON.stringify(carrinho))
             }
-
-            /* const store = localStorage.getItem('selecionados')
-            if(!store){
-                localStorage.setItem('selecionados', true)
-            } */
         })
     })
 }
@@ -188,13 +153,4 @@ function addVazio() {
         divEmpty.classList.remove("hidden")
     }
 }
-
-
-
-/* function localStorageLocation() {
-    localStorage.getItem("@kenzieVagas:VagasSelecionadas")
-}
-
-
-localStorage.setItem("@kenzieVagas:VagasSelecionadas", JSON.stringify()) */
 
